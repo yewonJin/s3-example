@@ -1,0 +1,83 @@
+@font-face {
+   font-family: 'SUIT-Regular';
+   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
+   font-weight: normal;
+   font-style: normal;
+}
+
+.App {
+   width: 900px;
+   margin: 90px auto;
+   padding: 50px;
+   border: 1px solid #ddd;
+   background-color: white;
+   text-align: center;
+   font-family: 'SUIT-Regular', 'noto-sans';
+}
+
+.TopContainer {
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.TopContainer > input {
+   display: none;
+}
+
+.TopContainer > label {
+   position: absolute;
+   right: 0;
+   border: 1px solid #ddd;
+   padding: 6px 12px;
+}
+
+.TopContainer > label:hover {
+   cursor: pointer;
+   background-color: #f0f0f0;
+}
+
+.ImageContainer {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 10px;
+   row-gap: 30px;
+   margin-top: 20px;
+}
+
+.ImageBox {
+   position: relative;
+}
+
+.ImageBox > img {
+   width: 100%;
+}
+
+.InfoBox {
+   display: flex;
+   gap: 10px;
+   justify-content: center;
+   margin-top: 6px;
+}
+
+.InfoBox > p {
+   margin: 0px;
+}
+
+.InfoBox > span {
+   position: absolute;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   top: 8px;
+   right: 8px;
+   background-color: rgba(0, 0, 0, 0.3);
+   padding: 3px;
+   border-radius: 20px;
+}
+
+.InfoBox > span > svg:hover {
+   cursor: pointer;
+   transform: scale(1.08);
+}
